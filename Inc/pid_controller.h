@@ -11,28 +11,28 @@
 #include <stdint.h>
 
 typedef struct {
-    // PID gains
-    float Kp;  // Proportional gain
-    float Ki;  // Integral gain
-    float Kd;  // Derivative gain
+    //PID vars
+    float Kp;  //Proportional var
+    float Ki;  //Integral var
+    float Kd;  //Derivative var
 
-    // PID state
-    float setpoint;           // Desired temperature (°C)
-    float integral;           // Accumulated error
-    float previous_error;     // Last error for derivative
+    //State
+    float setpoint;           //Desired temp var
+    float integral;           //Error var
+    float previous_error;     //Prev error var
 
-    // Output limits
+    //output var
     float output_min;
     float output_max;
 
-    // Anti-windup
+    //anti-windup
     float integral_max;
 
-    // Timing
-    float sample_time;  // seconds between updates
+    //Time
+    float sample_time;  //update time
 } PID_Controller;
 
-// Function prototypes
+//prototypes for functions
 void PID_Init(PID_Controller *pid, float kp, float ki, float kd, float sample_time);
 void PID_SetLimits(PID_Controller *pid, float min, float max);
 void PID_SetSetpoint(PID_Controller *pid, float setpoint);
