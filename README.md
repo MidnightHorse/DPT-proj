@@ -7,3 +7,4 @@ A voice-controlled thermostat regulation system built with an STM32 microcontrol
 Technologies used: Arduino, STM32 (IDE/MX), C/C++ 
 # Screenshots.
 <img width="546" height="503" alt="thermostat" src="https://github.com/user-attachments/assets/32359b05-9aab-45d5-a3db-33becdabd31b" />
+<img width="947" height="688" alt="thermostat3" src="https://github.com/user-attachments/assets/7393ff13-ced8-423d-84b0-796aab507b12" />
